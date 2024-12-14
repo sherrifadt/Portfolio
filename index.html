@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>My Portfolio Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    /* Basic styling for the popup */
+    .popup {
+      display: none; /* Hidden by default */
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+    }
+    .popup-content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 500px;
+      text-align: center;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <!-- Move to up button -->
+  <div class="scroll-button">
+    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  <!-- navgaition menu -->
+  <nav>
+    <div class="navbar">
+      <div class="logo"><a href="#">Portfolio.</a></div>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#technicalinterests">Technical Interest</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <div class="cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+      </ul>
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Home Section Start -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <div class="text">
+        <div class="text-one">Hello,</div>
+        <div class="text-two">I'm Sheriff adedoja</div>
+        <div class="text-three">Frontent Developer</div>
+        <div class="text-four">From University of Hertfordshire</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section Start -->
+  <section class="about" id="about">
+    <div class="content">
+      <div class="title"><span>About Me</span></div>
+      <div class="about-details">
+        <div class="left">
+          <img src="images/about.jpg" alt="MyImage" />
+        </div>
+        <div class="right">
+          <div class="topic">Programinig Is My Passion</div>
+          <p>
+            Hi, I'm Sheriff Adedoja, a passionate Frontend Developer currently pursuing a BSc (Hons) in Computer Science and Information Technology at the University of Hertfordshire. With a strong foundation in web development and a keen eye for design, I specialize in creating intuitive and visually appealing websites and web applications.
+            I am always exploring new technologies and tools to enhance the user experience and push the boundaries of what's possible on the web. Whether it's working with HTML, CSS, JavaScript, or exploring frameworks like React and Vue, I strive to deliver clean, efficient, and scalable code.
+            I'm driven by a deep curiosity for how technology can shape the digital world and am committed to continuous learning, adapting, and growing in the fast-evolving field of frontend development.
+            Feel free to reach out if you'd like to collaborate on exciting projects or discuss the latest trends in web development!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Technical Interests Section Start -->
+  <!-- Section Tag and Other Div will same where we need to put same CSS -->
+  <section class="technicalinterests" id="technicalinterests">
+    <div class="content">
+      <div class="title"><span>Technical Interests</span></div>
+      <div class="technicalinterests-details">
+        <div class="text">
+          <div class="topic">Technical Interests Reflects My Knowledge</div>
+          <p>I have strong technical skills in front-end and back-end web development, particularly in HTML, CSS, JavaScript, and PHP. 
+            With HTML, I am able to create well-structured and semantic web pages, ensuring a solid foundation for any website. 
+            My CSS skills allow me to design visually appealing layouts, working with everything from basic styles to advanced animations 
+            and responsive designs that adapt seamlessly to different screen sizes. In JavaScript, I am proficient at adding interactivity 
+            and dynamic elements to websites, enhancing user experience through real-time updates and interactive features. </p>
+        </div>
+        <div class="boxes">
+          <div class="box">
+            <div class="topic">HTML</div>
+            <div class="per">90%</div>
+          </div>
+          <div class="box">
+            <div class="topic">CSS</div>
+            <div class="per">80%</div>
+          </div>
+          <div class="box">
+            <div class="topic">JavScript</div>
+            <div class="per">70%</div>
+          </div>
+          <div class="box">
+            <div class="topic">PHP</div>
+            <div class="per">60%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Projects Section Start -->
+  <section class="projects" id="projects">
+    <div class="content">
+      <div class="title"><span>My Projects</span></div>
+      <div class="boxes">
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="topic">Personal Portfolio Website</div>
+          <p> A clean, responsive personal portfolio website showcasing your work, skills, and projects.</p>
+            <button id="openPopupBtn1">View Project Description</button>
+        </div>
+         <!-- Popup Modal 1-->
+         <div id="projectPopup1" class="popup">
+          <div class="popup-content">
+            <span class="close-btn1">&times;</span>
+            <div class="icon">
+              <i class="fas fa-user"></i>
+            </div>
+            <h2>Personal Portfolio Website</h2>
+            <p>A clean, responsive personal portfolio website showcasing your work, skills, and projects.
+               Built using HTML for structure, CSS for design, and JavaScript for interactive 
+               features like a dynamic portfolio gallery and smooth scrolling. 
+               The site also includes a contact form with PHP backend to send inquiries directly 
+               to your email.</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <div class="topic">E-commerce Platform Website</div>
+          <p>A fully functional e-commerce website where users can browse products, add items to the cart...</p>
+            <button id="openPopupBtn2">View Project Description</button>
+        </div>
+         <!-- Popup Modal 2-->
+          <div id="projectPopup2" class="popup">
+            <div class="popup-content">
+              <span class="close-btn2">&times;</span>
+              <div class="icon">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <h2>E-commerce Platform Website</h2>
+              <p>A fully functional e-commerce website where users can browse products, add items to the cart, and proceed to checkout. HTML and CSS were used to create the front-end layout, while JavaScript added interactivity such as product filtering and a live cart counter. PHP handles user authentication, orders, and database management for product details and user accounts.</p>
+            </div>
+          </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <div class="topic">Real-time Weather App</div>
+          <p>A real-time weather application that provides users with weather forecasts based on their location. </p>
+            <button id="openPopupBtn3">View Project Description</button>
+        </div>
+        <!-- Popup Modal 3-->
+        <div id="projectPopup3" class="popup">
+          <div class="popup-content">
+            <span class="close-btn3">&times;</span>
+            <div class="icon">
+              <i class="fas fa-cloud"></i>
+            </div>
+            <h2>Real-time Weather </h2>
+            <p>A real-time weather application that provides users with weather forecasts based on their location. The app fetches data from an external API using JavaScript's Fetch API and displays the results dynamically. HTML and CSS ensure a clean, responsive interface, while PHP is used to handle user preferences and store location data in a database for future visits..</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-newspaper"></i>
+          </div>
+          <div class="topic">Blog Website with CMS</div>
+          <p>A dynamic blog platform where users can create, edit, and delete blog posts.</p>
+            <button id="openPopupBtn4">View Project Description</button>
+        </div>
+        <!-- Popup Modal 4-->
+        <div id="projectPopup4" class="popup">
+          <div class="popup-content">
+            <span class="close-btn4">&times;</span>
+            <div class="icon">
+              <i class="fas fa-newspaper"></i>
+            </div>
+            <h2>Blog Website with CMS</h2>
+            <p>A dynamic blog platform where users can create, edit, and delete blog posts. The blog is built with HTML and CSS for front-end layout, while PHP is used for the content management system (CMS), allowing users to manage posts through an admin panel. JavaScript enhances the user experience with features like live comment updating and post pagination.</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="topic">Job Portal Website</div>
+          <p>A job portal where users can search for job listings, apply for positions, and submit resumes. </p>
+            <button id="openPopupBtn5">View Project Description</button>
+        </div>
+        <!-- Popup Modal 5-->
+        <div id="projectPopup5" class="popup">
+          <div class="popup-content">
+            <span class="close-btn5">&times;</span>
+            <div class="icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <h2>Job Portal Website</h2>
+            <p>A job portal where users can search for job listings, apply for positions, and submit resumes. Built using HTML for structure, CSS for styling, and JavaScript to create dynamic search filters and job sorting. PHP handles user registration, login, and job posting functionalities, with a MySQL database storing user profiles and job details.</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="topic">Online Quiz Platform</div>
+          <p>An online quiz platform where users can take quizzes on various topics and track their scores.</p>
+            <button id="openPopupBtn6">View Project Description</button>
+        </div>
+        <!-- Popup Modal 6-->
+        <div id="projectPopup6" class="popup">
+          <div class="popup-content">
+            <span class="close-btn6">&times;</span>
+            <div class="icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h2>Online Quiz Platform</h2>
+            <p>An online quiz platform where users can take quizzes on various topics and track their scores. The platform uses HTML for quiz layout, CSS for styling, and JavaScript for interactive features such as timer countdown, scoring, and question navigation. PHP is used to store quiz data, user results, and provide an admin panel to create new quizzes or review user performance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section Start -->
+  <footer>
+    <div class="text">
+      <span>Created By <a href="#">StudentName</a> | &#169; 2024 All Rights Reserved</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
