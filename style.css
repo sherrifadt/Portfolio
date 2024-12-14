@@ -52,13 +52,13 @@ nav .navbar {
   margin: auto;
 }
 
-nav .navbar .logo a {
+nav .navbar .logo{
   font-weight: 500;
   font-size: 35px;
   color: #000000;
 }
 
-nav.sticky .navbar .logo a {
+nav.sticky .navbar .logo{
   color: #fff;
 }
 
@@ -85,20 +85,20 @@ nav .navbar .menu li {
 }
 
 nav.sticky .menu a {
-  color: #FFF;
+  color: #000;
 }
 
 nav.sticky .menu a:hover {
-  color: #0E2431;
+  color: #F0F8FF;
 }
 
-.navbar .media-icons a {
+.navbar .media-icons {
   color: #000000;
   font-size: 18px;
   margin: 0 6px;
 }
 
-nav.sticky .media-icons a {
+nav.sticky .media-icons {
   color: #F0F8FF;
 }
 
@@ -168,7 +168,7 @@ nav.sticky .menu-btn {
 .home .text-four {
   font-size: 23px;
   margin: 5px 0;
-  color: #ffffff;
+  color: #000000;
 }
 
 .home .button {
@@ -249,7 +249,7 @@ section .topic {
 }
 
 .about-details .right p {
-  text-align: justify;
+  text-align: left;
   color: #0E2431;
 }
 
@@ -276,7 +276,7 @@ section .topic {
 
 .technicalinterests-details p {
   color: #0E2431;
-  text-align: justify;
+  text-align: left;
 }
 
 .technicalinterests .technicalInterests-details .experience {
@@ -300,7 +300,7 @@ section .topic {
 
 .technicalinterests-details .boxes .topic {
   font-size: 20px;
-  color: #008B8B;
+  color: #000000;
 }
 
 .technicalinterests-details .boxes .per {
@@ -473,12 +473,12 @@ footer {
 footer .text span {
   font-size: 17px;
   font-weight: 400;
-  color: #fff;
+  color: #000000;
 }
 
 footer .text span a {
   font-weight: 500;
-  color: #FFF;
+  color: #000000;
 }
 
 footer .text span a:hover {

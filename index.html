@@ -43,20 +43,19 @@
   <!-- navgaition menu -->
   <nav>
     <div class="navbar">
-      <div class="logo"><a href="#">Portfolio.</a></div>
+      <div class="logo"><h1>Portfolio</h1></div>
       <ul class="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#technicalinterests">Technical Interest</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#home" aria-label="Go to Home section">Home</a></li>
+        <li><a href="#about" aria-label="Go to About section">About</a></li>
+        <li><a href="#technicalinterests" aria-label="Go to Technical Interests section">Technical Interest</a></li>
+        <li><a href="#projects" aria-label="Go to Projects section">Projects</a></li>
         <div class="cancel-btn">
-          <i class="fas fa-times"></i>
-        </div>
+          <a href="#" aria-label="Close menu"><i class="fas fa-times"></i></a>
       </ul>
       <div class="media-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
       </div>
     </div>
     <div class="menu-btn">
@@ -79,10 +78,10 @@
   <!-- About Section Start -->
   <section class="about" id="about">
     <div class="content">
-      <div class="title"><span>About Me</span></div>
+      <div class="title"><span><h2>About Me</h2></span></div>
       <div class="about-details">
         <div class="left">
-          <img src="images/about.jpg" alt="MyImage" />
+          <img src="images/about.jpg" alt="Sheriff Adedoja, Frontend Developer" />
         </div>
         <div class="right">
           <div class="topic">Programinig Is My Passion</div>
@@ -101,7 +100,7 @@
   <!-- Section Tag and Other Div will same where we need to put same CSS -->
   <section class="technicalinterests" id="technicalinterests">
     <div class="content">
-      <div class="title"><span>Technical Interests</span></div>
+      <div class="title"><span><h2>Technical Interests</h2></span></div>
       <div class="technicalinterests-details">
         <div class="text">
           <div class="topic">Technical Interests Reflects My Knowledge</div>
@@ -136,13 +135,13 @@
   <!-- My Projects Section Start -->
   <section class="projects" id="projects">
     <div class="content">
-      <div class="title"><span>My Projects</span></div>
+      <div class="title"><span><h2>My Projects</h2></span></div>
       <div class="boxes">
         <div class="box">
           <div class="icon">
             <i class="fas fa-user"></i>
           </div>
-          <div class="topic">Personal Portfolio Website</div>
+          <div class="topic"><h2 style="font-size: 20px;">Personal Portfolio Website</h2></div>
           <p> A clean, responsive personal portfolio website showcasing your work, skills, and projects.</p>
             <button id="openPopupBtn1">View Project Description</button>
         </div>
@@ -153,7 +152,7 @@
             <div class="icon">
               <i class="fas fa-user"></i>
             </div>
-            <h2>Personal Portfolio Website</h2>
+            <h3>Personal Portfolio Website</h3>
             <p>A clean, responsive personal portfolio website showcasing your work, skills, and projects.
                Built using HTML for structure, CSS for design, and JavaScript for interactive 
                features like a dynamic portfolio gallery and smooth scrolling. 
@@ -166,7 +165,7 @@
           <div class="icon">
             <i class="fas fa-shopping-cart"></i>
           </div>
-          <div class="topic">E-commerce Platform Website</div>
+          <div class="topic"><h2 style="font-size: 20px;">E-commerce Platform</h2></div>
           <p>A fully functional e-commerce website where users can browse products, add items to the cart...</p>
             <button id="openPopupBtn2">View Project Description</button>
         </div>
@@ -177,7 +176,7 @@
               <div class="icon">
                 <i class="fas fa-shopping-cart"></i>
               </div>
-              <h2>E-commerce Platform Website</h2>
+              <h3>E-commerce Platform Website</h3>
               <p>A fully functional e-commerce website where users can browse products, add items to the cart, and proceed to checkout. HTML and CSS were used to create the front-end layout, while JavaScript added interactivity such as product filtering and a live cart counter. PHP handles user authentication, orders, and database management for product details and user accounts.</p>
             </div>
           </div>
@@ -185,7 +184,7 @@
           <div class="icon">
             <i class="fas fa-cloud"></i>
           </div>
-          <div class="topic">Real-time Weather App</div>
+          <div class="topic"><h2 style="font-size: 20px;">Real-time Weather App</h2></div>
           <p>A real-time weather application that provides users with weather forecasts based on their location. </p>
             <button id="openPopupBtn3">View Project Description</button>
         </div>
@@ -196,7 +195,7 @@
             <div class="icon">
               <i class="fas fa-cloud"></i>
             </div>
-            <h2>Real-time Weather </h2>
+            <h3>eal-time Weather </h3>
             <p>A real-time weather application that provides users with weather forecasts based on their location. The app fetches data from an external API using JavaScript's Fetch API and displays the results dynamically. HTML and CSS ensure a clean, responsive interface, while PHP is used to handle user preferences and store location data in a database for future visits..</p>
           </div>
         </div>
@@ -204,7 +203,7 @@
           <div class="icon">
             <i class="fas fa-newspaper"></i>
           </div>
-          <div class="topic">Blog Website with CMS</div>
+          <div class="topic"><h2 style="font-size: 20px;">Blog Website with CMS</h2></div>
           <p>A dynamic blog platform where users can create, edit, and delete blog posts.</p>
             <button id="openPopupBtn4">View Project Description</button>
         </div>
@@ -215,7 +214,7 @@
             <div class="icon">
               <i class="fas fa-newspaper"></i>
             </div>
-            <h2>Blog Website with CMS</h2>
+            <h3>Blog Website with CMS</h3>
             <p>A dynamic blog platform where users can create, edit, and delete blog posts. The blog is built with HTML and CSS for front-end layout, while PHP is used for the content management system (CMS), allowing users to manage posts through an admin panel. JavaScript enhances the user experience with features like live comment updating and post pagination.</p>
           </div>
         </div>
@@ -223,7 +222,7 @@
           <div class="icon">
             <i class="fas fa-briefcase"></i>
           </div>
-          <div class="topic">Job Portal Website</div>
+          <div class="topic"><h2 style="font-size: 20px;">Job Portal Website</h2></div>
           <p>A job portal where users can search for job listings, apply for positions, and submit resumes. </p>
             <button id="openPopupBtn5">View Project Description</button>
         </div>
@@ -234,7 +233,7 @@
             <div class="icon">
               <i class="fas fa-briefcase"></i>
             </div>
-            <h2>Job Portal Website</h2>
+            <h3>Job Portal Website</h3>
             <p>A job portal where users can search for job listings, apply for positions, and submit resumes. Built using HTML for structure, CSS for styling, and JavaScript to create dynamic search filters and job sorting. PHP handles user registration, login, and job posting functionalities, with a MySQL database storing user profiles and job details.</p>
           </div>
         </div>
@@ -242,7 +241,7 @@
           <div class="icon">
             <i class="fas fa-trophy"></i>
           </div>
-          <div class="topic">Online Quiz Platform</div>
+          <div class="topic"><h2 style="font-size: 20px;">Online Quiz Platform</h2></div>
           <p>An online quiz platform where users can take quizzes on various topics and track their scores.</p>
             <button id="openPopupBtn6">View Project Description</button>
         </div>
@@ -253,7 +252,7 @@
             <div class="icon">
               <i class="fas fa-trophy"></i>
             </div>
-            <h2>Online Quiz Platform</h2>
+            <h3>Online Quiz Platform</h3>
             <p>An online quiz platform where users can take quizzes on various topics and track their scores. The platform uses HTML for quiz layout, CSS for styling, and JavaScript for interactive features such as timer countdown, scoring, and question navigation. PHP is used to store quiz data, user results, and provide an admin panel to create new quizzes or review user performance.</p>
           </div>
         </div>
@@ -264,7 +263,7 @@
   <!-- Footer Section Start -->
   <footer>
     <div class="text">
-      <span>Created By <a href="#">StudentName</a> | &#169; 2024 All Rights Reserved</span>
+      <span>Created By <a href="#">Sheriff adedoja</a> | &#169; 2024 All Rights Reserved</span>
     </div>
   </footer>
 
